@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Lazy Finance turns financial advice into action through a simple conversation." />
+    <title>Lazy Finance — Talk to your money</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Lazy Finance home">
+        <span class="brand-mark" aria-hidden="true">L</span>
+        <span>Lazy Finance</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#control">Security</a>
+      </nav>
+      <a class="button button-small button-ghost" href="#waitlist">Join the waitlist</a>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">THE FINANCE APP FOR PEOPLE WHO HATE FINANCE APPS</span>
+          <h1>Talk to your money.</h1>
+          <p class="hero-lede">Lazy turns everyday questions into clear financial actions. Ask what you can afford, move money, or update a goal without opening five different apps.</p>
+          <form class="waitlist-form" id="hero-form">
+            <label class="sr-only" for="hero-email">Email address</label>
+            <input id="hero-email" name="email" type="email" placeholder="you@email.com" required />
+            <button class="button button-primary" type="submit">Get early access</button>
+          </form>
+          <p class="form-note" id="hero-note">Join the product research waitlist. No spam.</p>
+          <div class="hero-proof" aria-label="Product benefits">
+            <span>Clear approvals</span>
+            <span>Connected accounts</span>
+            <span>Cancel anytime</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Lazy Finance conversation preview">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="phone">
+            <div class="phone-top"><span></span></div>
+            <div class="phone-header">
+              <div class="assistant-avatar">L</div>
+              <div><strong>Lazy</strong><small>your money assistant</small></div>
+              <button aria-label="More options">•••</button>
+            </div>
+            <div class="chat" id="chat-demo">
+              <div class="bubble bubble-user">Payday. What should I do with it?</div>
+              <div class="bubble bubble-lazy">
+                After rent and bills, you have <strong>$1,240</strong> available.
+                <div class="mini-plan">
+                  <span><b>$500</b> emergency fund</span>
+                  <span><b>$240</b> Roth IRA</span>
+                  <span><b>$500</b> flexible spending</span>
+                </div>
+              </div>
+              <div class="bubble bubble-lazy">Want me to move the first two amounts?</div>
+              <div class="approval-card">
+                <div><span>Move to savings</span><strong>$500</strong></div>
+                <div><span>Invest in Roth IRA</span><strong>$240</strong></div>
+                <button class="approve-demo" type="button">Review and approve</button>
+              </div>
+            </div>
+            <div class="compose"><span>Message Lazy</span><button aria-label="Send message">↑</button></div>
+          </div>
+          <div class="floating-nudge">
+            <span class="nudge-icon">!</span>
+            <div><strong>Quick heads-up</strong><small>This purchase would leave $32 in your dining budget.</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="signal-strip" aria-label="Lazy Finance product promise">
+        <p>Most finance apps explain what happened.</p>
+        <p class="signal-accent">Lazy helps you decide what happens next.</p>
+      </section>
+
+      <section class="section-shell section-block" id="how">
+        <div class="section-heading reveal">
+          <span class="eyebrow">HOW IT WORKS</span>
+          <h2>From “I should” to “it’s done.”</h2>
+          <p>Lazy keeps the interface simple while doing the complicated work behind the conversation.</p>
+        </div>
+        <div class="steps">
+          <article class="step reveal">
+            <span class="step-number">01</span>
+            <h3>Connect your financial life</h3>
+            <p>Bring your bank accounts, cards, goals, and recurring bills into one clear picture.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-number">02</span>
+            <h3>Ask in your own words</h3>
+            <p>Text a question, upload a receipt, or tell Lazy that your plans changed.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-number">03</span>
+            <h3>Approve the next move</h3>
+            <p>Review the reasoning, edit the amount, and approve the action when you’re ready.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="feature-stage" id="features">
+        <div class="section-shell">
+          <div class="section-heading light reveal">
+            <span class="eyebrow">MONEY, WITHOUT THE HOMEWORK</span>
+            <h2>A financial system that meets you in the moment.</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature feature-wide coral reveal">
+              <span class="feature-kicker">BEFORE YOU BUY</span>
+              <h3>Know what “affordable” means for you.</h3>
+              <p>Lazy checks the purchase against your real budget and goals before the money leaves your account.</p>
+              <div class="purchase-card">
+                <div><span>New headphones</span><strong>$189</strong></div>
+                <div class="budget-meter"><i></i></div>
+                <p>You can buy these, but your weekend budget drops to $46.</p>
+              </div>
+            </article>
+            <article class="feature mint reveal">
+              <span class="feature-kicker">ON PAYDAY</span>
+              <h3>Give every dollar a next step.</h3>
+              <p>Split income across bills, savings, and investing with one approval.</p>
+              <div class="stacked-money" aria-hidden="true"><span>$</span><span>$</span><span>$</span></div>
+            </article>
+            <article class="feature lavender reveal">
+              <span class="feature-kicker">WHEN LIFE CHANGES</span>
+              <h3>Update the plan by texting.</h3>
+              <p>“My rent went up $100” is enough for Lazy to recalculate what comes next.</p>
+              <div class="message-chip">My rent changed next month.</div>
+            </article>
+            <article class="feature feature-wide cream-card reveal">
+              <span class="feature-kicker">ALWAYS UP TO DATE</span>
+              <h3>Your full picture, minus the spreadsheet.</h3>
+              <p>Connected accounts, receipt uploads, and conversational updates keep the plan current without constant categorization.</p>
+              <div class="account-row">
+                <span>Checking <b>$2,148</b></span>
+                <span>Savings <b>$6,520</b></span>
+                <span>Investments <b>$4,310</b></span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell control-section" id="control">
+        <div class="control-copy reveal">
+          <span class="eyebrow">YOU STAY IN CONTROL</span>
+          <h2>Automation with a clear off switch.</h2>
+          <p>See what Lazy wants to do, why it recommends it, and what happens next. Set limits for routine tasks and require approval for bigger decisions.</p>
+          <ul>
+            <li><span>✓</span> Review every money movement before it happens</li>
+            <li><span>✓</span> Edit rules, thresholds, and recurring actions</li>
+            <li><span>✓</span> Pause automation or disconnect accounts anytime</li>
+          </ul>
+        </div>
+        <div class="control-panel reveal">
+          <div class="control-title"><span>Automation controls</span><small>3 active</small></div>
+          <div class="control-row"><div><strong>Payday savings</strong><small>Move 15% after every paycheck</small></div><span class="toggle on"></span></div>
+          <div class="control-row"><div><strong>Low balance protection</strong><small>Alert me below $300</small></div><span class="toggle on"></span></div>
+          <div class="control-row"><div><strong>Automatic investing</strong><small>Always ask before investing</small></div><span class="toggle"></span></div>
+          <button type="button">Edit my rules</button>
+        </div>
+      </section>
+
+      <section class="audience-section">
+        <div class="section-shell audience-inner reveal">
+          <span class="eyebrow">BUILT FOR YOUR FIRST BIG MONEY DECISIONS</span>
+          <h2>Your first paycheck. Your first investment. Your first plan that actually sticks.</h2>
+          <div class="audience-tags" aria-label="Intended audience">
+            <span>College graduates</span><span>New professionals</span><span>First-time investors</span><span>People starting over</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="waitlist-section section-shell" id="waitlist">
+        <div class="waitlist-card reveal">
+          <div>
+            <span class="eyebrow">EARLY ACCESS</span>
+            <h2>Make money management feel easy.</h2>
+            <p>Join the waitlist for product updates and early research invitations.</p>
+          </div>
+          <form class="waitlist-form waitlist-form-dark" id="footer-form">
+            <label class="sr-only" for="footer-email">Email address</label>
+            <input id="footer-email" name="email" type="email" placeholder="you@email.com" required />
+            <button class="button button-primary" type="submit">Join the waitlist</button>
+            <p class="form-note" id="footer-note">No spam. Just the occasional useful update.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="#top"><span class="brand-mark">L</span><span>Lazy Finance</span></a>
+      <p>Financial confidence, one conversation at a time.</p>
+      <span>Concept product © 2026</span>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
