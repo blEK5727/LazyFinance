@@ -1,6 +1,6 @@
-# Lazy Finance landing page
+# prosper landing page
 
-A responsive concept landing page for Lazy Finance, built with plain HTML, CSS, and JavaScript.
+A responsive concept landing page for prosper, built with plain HTML, CSS, and JavaScript.
 
 ## Preview locally
 
