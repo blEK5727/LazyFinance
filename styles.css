@@ -69,7 +69,8 @@ h3 { font-size: 27px; }
 .orbit { position: absolute; border-radius: 50%; }
 .orbit-one { width: 520px; height: 520px; background: var(--mint); opacity: .72; }
 .orbit-two { width: 390px; height: 390px; border: 1px solid rgba(17,42,42,.18); }
-.phone { position: relative; z-index: 2; width: 330px; height: 620px; overflow: hidden; border: 9px solid var(--ink); border-radius: 45px; background: #f6f6f4; box-shadow: var(--shadow); transform: rotate(2deg); }
+.phone { position: relative; z-index: 2; width: 330px; max-width: 100%; overflow: hidden; border: 9px solid var(--ink); border-radius: 45px; background: #000; box-shadow: var(--shadow); transform: rotate(2deg); }
+.phone-screen { display: block; width: 100%; height: auto; }
 .phone-top { height: 23px; display: grid; place-items: center; background: white; }
 .phone-top span { width: 88px; height: 17px; border-radius: 0 0 15px 15px; background: var(--ink); }
 .phone-header { height: 66px; padding: 10px 14px; display: flex; align-items: center; gap: 10px; background: white; border-bottom: 1px solid #e8e8e4; }
@@ -92,11 +93,6 @@ h3 { font-size: 27px; }
 .approval-card.approved button { background: var(--teal); }
 .compose { position: absolute; left: 12px; right: 12px; bottom: 12px; height: 42px; display: flex; align-items: center; justify-content: space-between; padding: 0 7px 0 14px; color: #98a3a1; border: 1px solid #dedfdb; border-radius: 21px; background: white; font-size: 11px; }
 .compose button { width: 30px; height: 30px; color: white; border: 0; border-radius: 50%; background: var(--coral); }
-.floating-nudge { position: absolute; z-index: 3; right: -40px; bottom: 42px; width: 250px; display: flex; gap: 11px; padding: 15px; border: 1px solid rgba(17,42,42,.12); border-radius: 18px; background: rgba(255,253,250,.94); box-shadow: 0 16px 40px rgba(17,42,42,.15); backdrop-filter: blur(14px); }
-.floating-nudge strong, .floating-nudge small { display: block; }
-.floating-nudge strong { font-size: 12px; }
-.floating-nudge small { margin-top: 3px; color: var(--ink-soft); font-size: 10px; line-height: 1.35; }
-.nudge-icon { flex: 0 0 auto; width: 28px; height: 28px; display: grid; place-items: center; border-radius: 9px; color: white; background: var(--coral); font-weight: 800; }
 
 .signal-strip { display: flex; justify-content: center; gap: 8px; padding: 28px 20px; color: white; background: var(--ink); font-size: clamp(18px, 2.4vw, 27px); font-weight: 600; }
 .signal-strip p { margin: 0; }
@@ -185,7 +181,6 @@ footer .brand-mark { width: 27px; height: 27px; font-size: 12px; }
   .hero-copy { display: flex; flex-direction: column; align-items: center; }
   .hero-proof { justify-content: center; }
   .hero-visual { margin-top: 20px; }
-  .floating-nudge { right: 4%; }
   .signal-strip { flex-direction: column; align-items: center; text-align: center; }
   .control-section, .waitlist-card { grid-template-columns: 1fr; gap: 55px; }
 }
