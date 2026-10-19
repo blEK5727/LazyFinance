@@ -69,7 +69,8 @@ h3 { font-size: 27px; }
 .orbit { position: absolute; border-radius: 50%; }
 .orbit-one { width: 520px; height: 520px; background: var(--mint); opacity: .72; }
 .orbit-two { width: 390px; height: 390px; border: 1px solid rgba(17,42,42,.18); }
-.phone { position: relative; z-index: 2; width: 330px; height: 620px; overflow: hidden; border: 9px solid var(--ink); border-radius: 45px; background: #f6f6f4; box-shadow: var(--shadow); transform: rotate(2deg); }
+.phone { position: relative; z-index: 2; width: 330px; max-width: 100%; overflow: hidden; border: 9px solid var(--ink); border-radius: 45px; background: #000; box-shadow: var(--shadow); transform: rotate(2deg); }
+.phone-screen { display: block; width: 100%; height: auto; }
 .phone-top { height: 23px; display: grid; place-items: center; background: white; }
 .phone-top span { width: 88px; height: 17px; border-radius: 0 0 15px 15px; background: var(--ink); }
 .phone-header { height: 66px; padding: 10px 14px; display: flex; align-items: center; gap: 10px; background: white; border-bottom: 1px solid #e8e8e4; }
